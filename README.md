@@ -1,6 +1,7 @@
 # Node.js-Express.js-MongoDB-Web-Application-NASA-Page-Replica
 
 - **Install Modules:** npm install. 
+- **Run Any Project:** nodemon "express.js name" or node "express.js name"
 - **Nodemon Install:** npm install -g nodeman. If give error, open powershell "as an administrator" then type "Get-ExecutionPolicy" then "Set-ExecutionPolicy unrestricted" => [Y].
 - **JSON File Install:** npm init. This Tracks the module will be install.
 - **lodash Install:** npm install lodash. lodash is a good function.
