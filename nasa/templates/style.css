@@ -1,0 +1,374 @@
+body, ul, li, h1, h2, img {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header {
+    background-color: black; /* Or #0B3D91 */
+    padding: 20px;
+    /* text-align: center; */
+    z-index: 1;
+    /* position: fixed; old template*/ 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 18%;
+}
+
+header .head {
+    text-align: left;
+    max-width: 1200px;
+}
+
+header .head img {
+    float: left;
+    max-width: 10em;
+    margin: 2px;
+    height: auto;
+    width: auto;
+}
+
+header .head h1 {
+    float: left;
+    color: white;
+    border: 5px solid #FC3D21;
+    padding: 6px;
+    margin: 40px 0;
+    border-radius: 20px;
+    top: 100px;
+    font-family: Arial;
+    background-color: #0B3D91;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.banner .webb {
+    position: absolute;
+    left: 0;
+    top: 20%; /*better to use percent than pixel */
+    padding: 30px;
+    color: aliceblue;
+    text-align: justify;
+    font-family: ariel;
+    font-size: 200%;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.banner .detail {
+    position: absolute;
+    background: white;
+    padding: 80px 30px;
+    top: 65%;
+    left: 50px;
+}
+
+.banner .detail h2 {
+    font-family: Arial;
+    text-align: left;
+    text-decoration: underline red 4px;
+    font-size: 30px;
+}
+
+.banner .detail p {
+    font-family: Arial;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.banner .detail p span {
+    font-weight: bold;
+}
+
+.banner .detail p a {
+    text-decoration: none;
+    color: #0B3D91;
+}
+
+nav {
+    background-color: #FC3D21;
+    padding: 20px;
+    position: sticky;
+    /* top: 170px; old template */
+    top: 0px;
+    text-align: center;
+}
+
+nav .es {
+    float: left;
+    margin-left: 80px;
+}
+
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 1000px;
+}
+
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a span {
+    border: 3px solid white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #FC3D21;
+    background-color: #0B3D91;
+  }
+
+.content {
+    max-width: 100%;
+    margin: 2px 80px;
+    padding: 20px 200px;
+    background-color: #ECE63D;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+  
+.blog-list .hold-one-blog {
+    padding: 10px 16px;
+    margin: 15px 0;
+    border-bottom: 2px solid black;    
+}
+  
+.blog-list .hold-one-blog:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.blog-list .hold-one-blog .blog-preview {
+    text-decoration: none;
+}
+
+.blog-list .hold-one-blog .blog-preview h2 {
+    font-size: 20px;
+    color: #FC3D21;
+    margin-bottom: 8px;
+}
+  
+.blog-list .hold-one-blog .blog-preview p {
+    color: #0B3D91;
+}
+  
+.b-detail .underlining {
+    padding: 5px 0;
+    border-bottom: 2px solid black;
+}
+  
+.b-detail .underlining h2 {
+    font-size: 30px;
+    color: #FC3D21;
+    margin-bottom: 20px, 0;
+}
+  
+.b-detail .underlining h2 span {
+    font-size: 15px;
+    color: black;
+}
+  
+.b-detail .underlining p {
+    font-size: 18px;
+    color: blue;
+}
+  
+.b-detail div {
+    margin: 20px 0;
+    font-family: Arial;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+  
+.b-detail .b1 {
+    background: #0B3D91;
+    color: #fff;
+    border: 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  
+.b-detail .b1 span {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.b-detail .b2 {
+    background: #0B3D91;
+    border: 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 900px;
+}
+
+.b-detail .b2 span {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color: #0B3D91;
+    font-weight: bold;
+}
+
+.create label {
+    text-align: left;
+    display: block;
+}
+
+.create h2 {
+    font-size: 25px;
+    color: #FC3D21;
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+}
+
+.create input, .create textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.create button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  
+.create .b2 {
+    background: #0B3D91;
+    border: 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+  
+.create .b2 span {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+  
+.create .b1 {
+    background: #0B3D91;
+    color: #fff;
+    border: 0;
+    margin-bottom: 50px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 500px;
+}
+  
+.create .b1 span {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.source {
+    padding: 0 50px;
+}
+
+.source p {
+    font-weight: bold;
+}
+
+.source p a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.join-us {
+    background: #0B3D91;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.join-us h2 {
+    font-size: 36px;
+    color: white;
+}
+
+form input{
+    margin: 20px 0;
+    padding: 20px 10px;
+    font-size: 24px;
+    border: 4px solid red;
+    border-radius: 30px;
+    width: 300px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .foot img {
+    max-width: 10%;
+    /* padding: 2px; */
+}
+
+footer .foot p {
+    font-size: 3px;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    padding: 3px;
+}
+
+.image li:hover {
+    position: relative;
+    top: -4px;
+}
+
+form input:focus {
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+
+form input:valid {
+    border: 4px solid green;
+}
+
+form input:invalid {
+    border: 4px solid #FC3D21;
+}
+
+p::selection {
+    background-color: #FC3D21;
+    color: #0B3D91; 
+}

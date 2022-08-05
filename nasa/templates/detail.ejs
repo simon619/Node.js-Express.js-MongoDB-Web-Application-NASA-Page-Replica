@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<%- include("./partial/head.ejs") %>
+<body>
+    <%- include("./partial/header.ejs") %>
+    <%- include("./partial/banner.ejs") %>
+    <%- include("./partial/nav.ejs") %>
+    <div class="content">
+        <div class="b-detail">
+            <button class="b1"><a href="/"><span>Back</span></a></button>
+            <article>
+                <div class="underlining">
+                    <h2><%= blog.title %><br><span><%= blog.date %></span></h2>
+                    <p>Written by: <%= blog.author %></p>
+                </div>
+                <div>
+                    <p><%= blog.body %></p>
+                </div>
+                <button class="b2" data-doc="<%= blog._id %>"><span>Delete</span></button>
+            </article> 
+        </div>
+    </div>
+    <%- include("./partial/footer.ejs") %>
+    <script>
+        const java = document.querySelector('button.b2');
+
+        java.addEventListener('click', (e) => {
+            const endPoint = `/blogs/${java.dataset.doc}`;
+
+            fetch(endPoint, {
+                method: 'DELETE'
+            })
+            .then((resposne) => resposne.json())
+            .then((data) => window.location.href = data.redirect)
+            .catch((err) => {
+                console.log("Error: " + err);
+            })
+        });
+    </script>
+    </body>
+</html>

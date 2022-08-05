@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<%- include("./partial/head.ejs") %>
+<body>
+    <%- include("./partial/header.ejs") %>
+    <%- include("./partial/banner.ejs") %>
+    <%- include("./partial/nav.ejs") %>
+    <main>
+        <div class="content">
+            <h1>Blog List</h1>
+            <div class="blog-list">
+                <% if (blogs.length > 0) { %>
+                    <% blogs.forEach((i) => { %>
+                        <div class="hold-one-blog">
+                            <a class="blog-preview" href="/blogs/<%= i._id %>">
+                                <h2>Title: <%= i.title %></h2>
+                                <p>Author: <%= i.author %></p>
+                            </a>
+                        </div>
+                    <% }) %>
+                <% } %>
+            </div>
+        </div>
+    </main>
+    <div class="source"><p>Source: <a href="https://www.nasa.gov/webbfirstimages">https://www.nasa.gov/webbfirstimages</a></p></div>
+    <section class="join-us">
+        <p><b>At NASA, We Make Air And Space Available For Everyone.</b></p>
+        <h2>Join Today</h2>
+        <form>
+            <input type="email" name="email" placeholder="         Enter Your Email" required>
+        </form>       
+    </section>
+    <%- include("./partial/footer.ejs") %>
+    </body>
+</html>

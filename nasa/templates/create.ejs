@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<%- include("./partial/head.ejs") %>
+<body>
+    <%- include("./partial/header.ejs") %>
+    <%- include("./partial/banner.ejs") %>
+    <%- include("./partial/nav.ejs") %>
+    <div class="content">
+        <div class="create">
+            <button class="b1"><a href="/"><span>Back</span></a></button>
+            <h2>What's On Your Mind !</h2>
+            <form action="/blogs" method="POST">
+                <label for="title">Blog Title:</label>
+                <input type="text" id="title" name="title" maxlength="100" required>
+                <label for="author">Blog Author:</label>
+                <input type="text" id="author" name="author" maxlength="20" required>
+                <label for="body">Blog Body:</label>
+                <textarea id="body" name="body" required></textarea>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <button class="b2">Submit</button>
+            </form>
+        </div>
+    </div>
+    <%- include("./partial/footer.ejs") %>
+    </body>
+</html>
