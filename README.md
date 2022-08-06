@@ -18,4 +18,4 @@ MongoDB Instruction
 2. Create a cluster.
 3. Give cluster a "username" and "password". Better not to use any character but numbers and letter.
 4. Database => Browser Collection => Add My Data = "Database, Collection name: "Schema Name".
-5. **Path Format:** mongodb+srv://[username]:[password]@[cluster name].wdbxttz.mongodb.net/[database name]?retryWrites=true&w=majority
+5. **Path Format:** mongodb+srv://[**username**]:[**password**]@[**cluster name**].wdbxttz.mongodb.net/[**database name**]?retryWrites=true&w=majority
